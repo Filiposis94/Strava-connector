@@ -2,7 +2,7 @@ const axios = require('axios')
 const Token = require('../models/Token')
 
 // Strava setting for authenticaiton of user
-const redirectUri = 'http://127.0.0.1:5500/strava.html';
+const redirectUri = 'https://www.szymanik.cz/strava.html';
 const responseType = 'code';
 const approvalPrompt = 'force';
 const scope = 'activity:read';
