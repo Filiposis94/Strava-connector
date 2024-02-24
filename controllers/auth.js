@@ -20,7 +20,7 @@ const exchangeToken = async(req,res)=>{
     
     // Exchanging on Strava API
     const {data} = await axios.post(tokenUrl)
-    console.log(data);
+    // console.log(data);
 
     const tokenObject = {
         athleteId: data.athlete.id,
