@@ -9,7 +9,6 @@ const getActivities = async(req, res)=>{
     const currentDateEpoch = Math.floor(new Date().getTime()/1000);
     const dateObject = new Date()
     const last30DateEpoch = Math.floor(dateObject.setDate(dateObject.getDate()-30)/1000)
-    // console.log(last30DateEpoch);
  
     const activityUrl = `https://www.strava.com/api/v3/athlete/activities?before=${currentDateEpoch}&after=${last30DateEpoch}&page=1&per_page=5`
 
